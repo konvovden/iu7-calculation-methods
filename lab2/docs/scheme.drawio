@@ -1,0 +1,123 @@
+<mxfile host="65bd71144e">
+    <diagram id="PCYlpp_mxA9zYA-M48Wo" name="Page-1">
+        <mxGraphModel dx="1350" dy="847" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="10" value="" style="edgeStyle=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Начало" style="ellipse;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="140" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="4" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="t = (sqrt(5) - 1) / 2&#10;l = b - a" style="rounded=0;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="322.5" y="220" width="165" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="6" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="x1 = b - t * l&#10;f1 = f(x1)&#10;x2 = a + t * l&#10;f2 = f(x2)" style="rounded=0;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="335" y="310" width="140" height="81" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="7" target="38">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="edgeStyle=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="7" target="44">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="l &gt; 2ε" style="rhombus;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="417" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="нет" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="427.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="edgeStyle=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="38" target="39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="x* = (a + b) / 2&#10;f* = f(x*)" style="rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="571" y="427.5" width="132" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="39" target="40">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="x*, f*" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="561" y="510" width="152" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Конец" style="ellipse;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="572" y="594" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;rounded=0;" edge="1" parent="1" source="44" target="47">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="44" target="55">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="f1 &lt;= f2" style="rhombus;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="345" y="530" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="47" target="51">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="b = x2&#10;l = b - a" style="rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="248" y="633" width="94" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="да" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="285" y="538" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="да" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="397" y="495" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="51" target="53">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="x2 = x1&#10;f2 = f1" style="rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="248" y="710" width="94" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=16;" edge="1" parent="1" source="53">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="403" y="399" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="295" y="861"/>
+                            <mxPoint x="221" y="861"/>
+                            <mxPoint x="221" y="399"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="x1 = b - t * l&#10;f1 = f(x1)" style="rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="248" y="790" width="94" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="55" target="56">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="a = x1&#10;l = b - a" style="rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="636" width="94" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="56" target="57">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="x1 = x2&#10;f1 = f2" style="rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="468" y="710" width="94" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=16;" edge="1" parent="1" source="57">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="403" y="399" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="515" y="861"/>
+                            <mxPoint x="221" y="861"/>
+                            <mxPoint x="221" y="399"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="57" value="x2 = a + t * l&#10;f2 = f(x2)" style="rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="468" y="790" width="94" height="59" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="нет" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="461" y="545" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
