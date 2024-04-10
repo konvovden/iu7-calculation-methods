@@ -7,8 +7,12 @@ function lab1()
 
     [x, y, N] = bitwiseSearch(a, b, e, debug);
    
-    fprintf('RESULT: e = %f | N = %d | x* = %.10f | f(x*) = %.10f', e, N, x, y)
+    fplot(@f, [a, b]);
+    hold on;
 
+    fprintf('RESULT: e = %f | N = %d | x* = %.10f | f(x*) = %.10f', e, N, x, y);
+
+    scatter(x, y, 'b', 'filled');
 end
 
 function y = f(x)
@@ -22,7 +26,9 @@ function [x, y, N] = bitwiseSearch(a, b, e, debug)
     delta = (b - a) / 4;
 
     if debug
+        hold on;
         fprintf('%d: x%d = %.10f | y%d = %.10f\n', 0, 0, x0, 0, f0)
+        scatter(x0, f0);
     end
 
     while 1
@@ -34,6 +40,7 @@ function [x, y, N] = bitwiseSearch(a, b, e, debug)
 
         if debug
             fprintf('%d: x%d = %.10f | y%d = %.10f\n', i, i, x1, i, f1)
+            scatter(x1, f1);
         end
 
         if f0 <= f1 || x1 <= a || x1 >= b
