@@ -1,19 +1,22 @@
 function lab2()
+    clc();
+
     debug = 1;
-    delaySeconds = 0.6;
+    delaySeconds = 1.0;
 
     a = 0;
     b = 1;
-    e = 0.0001;
+    e = 0.01;
 
     fplot(@f, [a, b]);
     hold on;
+    
 
     [x, y, N] = goldenRatio(a, b, e, debug, delaySeconds);
    
     fprintf('RESULT: e = %f | N = %d | x* = %.10f | f(x*) = %.10f', e, N, x, y)
 
-    scatter(x, y, 'b', 'filled');
+    scatter(x, y, 'g', 'filled');
     
     hold off;
 end
@@ -31,18 +34,21 @@ function [x, y, N] = goldenRatio(a, b, e, debug, delaySeconds)
     x2 = a + t * l;
     f2 = f(x2);
 
+    if debug 
+        fprintf('0: a0 = %.10f | b0 = %.10f\n', a, b);
+        line([a, b], [f(a), f(b)], 'Color', 'red', 'LineStyle', '--');
+        pause(delaySeconds);
+    end
+
     i = 1;
 
     while 1
-        if debug 
-            fprintf('%d: a%d = %.10f | b%d = %.10f\n', i, i, a, i, b);
-            pl = line([a, b], [f(a), f(b)]);
-            pl.LineStyle = '--';
-            pause(delaySeconds);
-        end
-
         if l > 2 * e
             i = i + 1;
+
+            if debug 
+                line([a, b], [f(a), f(b)], 'Color', 'blue', 'LineStyle', '--');
+            end
 
 
            if f1 <= f2
@@ -63,10 +69,24 @@ function [x, y, N] = goldenRatio(a, b, e, debug, delaySeconds)
                 
                 x2 = a + t * l;
                 f2 = f(x2);
+           end
+
+
+            if debug 
+                fprintf('%d: a%d = %.10f | b%d = %.10f\n', i, i, a, i, b);
+                line([a, b], [f(a), f(b)], 'Color', 'red', 'LineStyle', '--');
+                pause(delaySeconds);
             end
+
         else
             break
         end
+
+
+    end
+
+    if debug 
+        line([a, b], [f(a), f(b)], 'Color', 'blue', 'LineStyle', '--');
     end
 
     x = (a + b) / 2;
