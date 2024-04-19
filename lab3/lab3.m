@@ -3,11 +3,11 @@ function lab3()
     warning('off', 'all');
 
     debug = 1;
-    delaySeconds = 1.0;
+    delaySeconds = 3.0;
 
     a = 0;
     b = 1;
-    e = 1e-2;
+    e = 1e-6;
 
     fplot(@f, [a, b]);
     hold on;
@@ -36,6 +36,10 @@ function [x, y, N] = parabolicMethod(a, b, e, debug, delaySeconds)
     i = 0;
 
     while 1
+        hold off;
+        fplot(@f, [a, b]);
+        hold on;
+
         i = i + 1;
 
         a0 = f1;
